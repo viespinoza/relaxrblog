@@ -14,3 +14,211 @@
      line-height: 0;
      height: 0;
 }
+
+body {
+	background: #f0efef;
+	font-family: "Open Sans"; 
+	color:#606161;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+/*solution / center the container???? How? Mine isn't centered. Can't get my container to center... */
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.RelaxrHeader {
+	margin: 0 auto;
+	background: #033048;
+	overflow: hidden;
+} 
+
+/*OMG!!!!! I CANNOT get the background behind Relaxr logo to be #033048!!!!! I've tried everything :,( See additional note below under "header .Relaxr"  */
+
+header {
+	background: #033048;
+	padding: 20px;
+}
+
+header div h1 {
+	background: #033048;
+}
+
+header nav {
+	float: right;	
+}
+header nav ul li {
+	display: inline-block;
+	margin: 0 0 0 40px;
+	font-size: 24px;
+}
+
+header .RelaxrLogo {
+	font-size: 48px;
+	font-weight: 800;
+	background: #033048;
+	display: inline-block;
+	color: white;
+} /*I don't understand why the background behind the Relaxr logo only turned 033048 when I used the CSS combination "header .RelaxrLogo" instead of only ".RelaxrLogo" */
+
+
+.RelaxrHeaderNav {
+	font-weight: 400;
+	font-size: 24px;
+	background: #033048;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+header nav ul li a {
+	color: #f9e42e;
+/*Yikes couldn't get this yellow until I looked the solution*/
+}
+
+.RelaxrMain {
+	width: 700px;
+	grid-column-gap: 20px;
+	display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    /*The last three properties: crucial to bring to position the sections*/
+}
+
+/* Found this for "gutter" on MDN but don't really get it. Does it only work with "display:grid"?   grid-column-gap: 20px;*/
+
+.RelaxrContent {
+	flex-basis: 700px;
+	min-width: 320px;
+	margin-right: 20px;
+	vertical-align: top;
+	font-size: 22px;
+	font-weight: 300;
+	color: #606161;
+}
+
+
+h2 {
+	font-size: 40px;
+	font-weight: 600;
+	color: #033048;
+}
+
+.RelaxrContent p:first-of-type:first-letter{
+	float: left;
+	font-size: 80px;
+	line-height: 65px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+	font-weight: 600;
+}
+
+
+.readmore {
+	font-size: 24px;
+	font-weight: 400;
+	color: #033048;
+}
+
+
+.RelaxrAside {
+	width: 240px;
+	display: inline-block;
+  	vertical-align: top;
+/*These last properties aren't working on my code*/
+}
+
+
+.AsideMenu {
+	font-size: 32px;
+	font-weight: 800;
+}
+
+.RelaxrCategoriesNav {
+	font-size: 24px;
+	font-weight: 300;
+}
+.RelaxrCategoriesNav a {
+	color:#606161;
+}
+
+
+.RelaxrCategoriesNav a:visited {
+  color: green;
+}
+	
+
+footer {
+	width: 100%;
+	background: #121212;
+	text-align: center;
+}
+
+footer .RelaxrFooter {
+	width: 100%;
+	background: #121212;
+	display: inline-block;
+}
+
+section {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.button {
+  border-radius: 5px;
+  background: #f9e42e;
+  color: #033048;
+  height: 50px;
+  display: block;
+  margin: 0;
+  padding: 20px 0; /*Saw this is the solution but not sure why this centers the bitton.....?!???*/
+  border: 0;
+}
+
+.signup { 
+	font-weight: 600;
+	font-size: 12px;
+	border-radius: 5px;
+	background: #033048;
+	text-align: center;
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	color: white;
+ }
+
+
+.RelaxrLogo {
+	color:#f9e42e;
+	background: #121212;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 26px 75px;  
+  text-align: center;
+}
+
+.icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    clear: both;
+    text-align: center;
+    margin: 0;
+}
+
+.copyright {
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	color: white;
+}
